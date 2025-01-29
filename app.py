@@ -88,7 +88,7 @@ def generate_answer(query, movie_data):
 
 # Streamlit app
 def main():
-    st.title("Movie Query System")
+    st.title("Know Your Movies")
 
     # Download the dataset from GitHub
     dataset_path = download_dataset_from_github()
@@ -99,6 +99,7 @@ def main():
 
         # User input for the query
         user_query = st.text_input("Enter your movie query (type 'exit' to quit):")
+        st.write("Suggested question: Who directed Avatar? What are the casts for Avenger? What is the plot for The Batman? You can also ask about a movie's budget, plot or a summary. Try it!")
 
         if user_query.lower() != 'exit':
             answer = generate_answer(user_query, df_relevant)
