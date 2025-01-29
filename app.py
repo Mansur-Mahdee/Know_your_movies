@@ -98,7 +98,7 @@ def main():
         df_relevant = load_dataset(dataset_path)
 
         # User input for the query
-        st.write("Suggested question: Who directed Avatar? What are the casts for Avenger? What is the plot for The Batman? You can also ask about a movie's budget, plot or a summary. Try it!")
+        st.write("Suggested question: Who directed Avatar? What are the casts for Spectre? What is the plot for The Lone Ranger? You can also ask about a movie's budget, plot or a summary. Try it!")
         user_query = st.text_input("Enter your movie query (type 'exit' to quit):")
        
 
